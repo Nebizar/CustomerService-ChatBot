@@ -1,0 +1,131 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "how are you",
+        "intent": "how_are_you",
+        "entities": []
+      },
+      {
+        "text": "how is it going",
+        "intent": "how_are_you",
+        "entities": []
+      },
+      {
+        "text": "how is life",
+        "intent": "how_are_you",
+        "entities": []
+      },
+      {
+        "text": "I am Krzychu",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Krzychu",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "I am Kamil",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "Kamil",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "I'm Mikolaj",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "Mikolaj",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "im Zosia",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "Zosia",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "My name is Jarek Jakikolwiek",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 11,
+            "end": 28,
+            "value": "Jarek Jakikolwiek",
+            "entity": "PERSON"
+          }
+        ]
+      }
+    ]
+  }
+}
