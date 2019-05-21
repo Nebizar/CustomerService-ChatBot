@@ -6,11 +6,13 @@ Created on Mon May 20 17:13:01 2019
 """
 
 from nlu import NLU
+import warnings
 
 """
 # Main loop of chatbot - do while intent is not 'goodbye'
 """
 def main():
+    warnings.filterwarnings("ignore")
     rasa_nlu = NLU()
     rasa_nlu.training()
     while True:
