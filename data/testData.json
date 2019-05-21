@@ -27,6 +27,57 @@
         "entities": []
       },
       {
+        "text": "i have a problem with my laptop",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "my computer doesn't work",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "the screen is broken",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
         "text": "bye",
         "intent": "goodbye",
         "entities": []
@@ -52,77 +103,949 @@
         "entities": []
       },
       {
-        "text": "how are you",
-        "intent": "how_are_you",
+        "text": "no",
+        "intent": "deny",
         "entities": []
       },
       {
-        "text": "how is it going",
-        "intent": "how_are_you",
+        "text": "indeed",
+        "intent": "affirm",
         "entities": []
       },
       {
-        "text": "how is life",
-        "intent": "how_are_you",
+        "text": "that's right",
+        "intent": "affirm",
         "entities": []
       },
       {
-        "text": "I am Krzychu",
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i have an issue with the keyboard",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "keyboard",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "my name is krzychu",
         "intent": "my_name_is",
         "entities": [
           {
-            "start": 5,
-            "end": 12,
-            "value": "Krzychu",
+            "start": 11,
+            "end": 18,
+            "value": "krzychu",
             "entity": "PERSON"
           }
         ]
       },
       {
-        "text": "I am Kamil",
-        "intent": "my_name_is",
-        "entities": [
-          {
-            "start": 5,
-            "end": 10,
-            "value": "Kamil",
-            "entity": "PERSON"
-          }
-        ]
-      },
-      {
-        "text": "I'm Mikolaj",
+        "text": "i'm kamil",
         "intent": "my_name_is",
         "entities": [
           {
             "start": 4,
-            "end": 11,
-            "value": "Mikolaj",
+            "end": 9,
+            "value": "kamil",
             "entity": "PERSON"
           }
         ]
       },
       {
-        "text": "im Zosia",
+        "text": "im mikolaj",
         "intent": "my_name_is",
         "entities": [
           {
             "start": 3,
-            "end": 8,
+            "end": 10,
+            "value": "mikolaj",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "I'm Zosia",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
             "value": "Zosia",
             "entity": "PERSON"
           }
         ]
       },
       {
-        "text": "My name is Jarek Jakikolwiek",
+        "text": "I am Iron Man",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "Iron Man",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "My name is James Bond",
         "intent": "my_name_is",
         "entities": [
           {
             "start": 11,
-            "end": 28,
-            "value": "Jarek Jakikolwiek",
+            "end": 21,
+            "value": "James Bond",
             "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "nope",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "nah",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "The USB port is blocked",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "USB port",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "The mouse is missing",
+        "intent": "incomplete_order",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "mouse",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I didn't find the keyboard",
+        "intent": "incomplete_order",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "keyboard",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I can't turn on the computer.",
+        "intent": "cant_turn_on",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "It seems that I lost all the data stored on my hard drive.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 47,
+            "end": 57,
+            "value": "hard drive",
+            "entity": "device_element"
+          },
+          {
+            "start": 14,
+            "end": 33,
+            "value": "I lost all the data",
+            "entity": "problem"
+          }
+        ]
+      },
+      {
+        "text": "I can't connect to the internet",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "internet",
+            "entity": "internet"
+          }
+        ]
+      },
+      {
+        "text": "The arrow keys on the keyboard don't work",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "keyboard",
+            "entity": "device"
+          },
+          {
+            "start": 0,
+            "end": 14,
+            "value": "The arrow keys",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "The speakers broke down",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "speakers",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I can't use the touchpad",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "touchpad",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "Everything works great except for the HDMI socket.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 38,
+            "end": 49,
+            "value": "HDMI socket",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "The headphone jack is terrible.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 18,
+            "value": "headphone jack",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "The screen is black",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "Half of the screen is white",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "Can you help me?",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "The mouse is useless.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "mouse",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The graphic card drivers are not up-to-date.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 16,
+            "value": "graphic card",
+            "entity": "device"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "drivers",
+            "entity": "software"
+          },
+          {
+            "start": 4,
+            "end": 24,
+            "value": "graphic card drivers",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "The monitor isn't turning on.",
+        "intent": "cant_turn_on",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "monitor",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The charger isn't there.",
+        "intent": "incomplete_order",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "charger",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The touchpad is a joke.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "touchpad",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "The computer is extremely slow.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The charger doesn't charge",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "charger",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the fan is too loud.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "fan",
+            "entity": "device_element"
+          },
+          {
+            "start": 8,
+            "end": 20,
+            "value": "is too loud.",
+            "entity": "problem"
+          }
+        ]
+      },
+      {
+        "text": "The program requires a licence.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "program",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "The camera does the opposite of working.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "camera",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I can't install the printer drivers",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "printer",
+            "entity": "device"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "drivers",
+            "entity": "software"
+          },
+          {
+            "start": 20,
+            "end": 35,
+            "value": "printer drivers",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "The computer is hot",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "is hot",
+            "entity": "problem"
+          },
+          {
+            "start": 4,
+            "end": 12,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "Can you solve ths issue?",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "Can you do anything about it?",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "Can you ship a new product to me?",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "The scanner won't turn on.",
+        "intent": "cant_turn_on",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "scanner",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The computer is on fire",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "i can't turn the laptop on.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I am offline.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "offline",
+            "entity": "internet"
+          }
+        ]
+      },
+      {
+        "text": "Something happened.",
+        "intent": "issue",
+        "entities": []
+      },
+      {
+        "text": "Something happened to my printer.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "printer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I can't plug the monitor into the computer.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "monitor",
+            "entity": "device"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "computer",
+            "entity": "device"
+          },
+          {
+            "start": 0,
+            "end": 12,
+            "value": "I can't plug",
+            "entity": "problem"
+          }
+        ]
+      },
+      {
+        "text": "i can't download the game of thrones finale.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 2,
+            "end": 16,
+            "value": "can't download",
+            "entity": "internet"
+          }
+        ]
+      },
+      {
+        "text": "I can't install microsoft office.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 16,
+            "end": 32,
+            "value": "microsoft office",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "I can't open chrome.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "chrome",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "I think I have a virus.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "virus",
+            "entity": "virus"
+          }
+        ]
+      },
+      {
+        "text": "It seems that the computer is infected.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 27,
+            "end": 38,
+            "value": "is infected",
+            "entity": "virus"
+          }
+        ]
+      },
+      {
+        "text": "The button is not glowing",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "button",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "The internet stopped working.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "internet",
+            "entity": "internet"
+          }
+        ]
+      },
+      {
+        "text": "The screen is black.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "There are stripes on the screen.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "my screen is not glowing",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "i can't click anything.",
+        "intent": "issue",
+        "entities": []
+      },
+      {
+        "text": "you didn't include a charger, you thieves!!!",
+        "intent": "incomplete_order",
+        "entities": [
+          {
+            "start": 21,
+            "end": 28,
+            "value": "charger",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "this program is stupid.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "program",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "The cooler is literally the worst.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "cooler",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I dropped my laptop into a lake.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "there's a weird sound coming from my computer.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 37,
+            "end": 45,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "please help me",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "fix it",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "not really",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "this mouse is a distaster",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "mouse",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the antivirus destroyed my life",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "antivirus",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "do something",
+        "intent": "ask_for_help",
+        "entities": []
+      },
+      {
+        "text": "the laptop does not power up.",
+        "intent": "cant_turn_on",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "where is my microphone?",
+        "intent": "incomplete_order",
+        "entities": [
+          {
+            "start": 12,
+            "end": 22,
+            "value": "microphone",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I can't read any sd card.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "sd card",
+            "entity": "device_element"
+          }
+        ]
+      },
+      {
+        "text": "I think the hard drive is wiped out.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 12,
+            "end": 22,
+            "value": "hard drive",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The desktop is upside down",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "desktop",
+            "entity": "software"
+          }
+        ]
+      },
+      {
+        "text": "I don't see anything on the screen",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "i cannot type on the keyboard",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "keyboard",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "my child cries when I turn up the volume of the speakers",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "my child cries",
+            "entity": "problem"
+          },
+          {
+            "start": 48,
+            "end": 56,
+            "value": "speakers",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "i hurt my fingers when i closed the laptop",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "i hurt my fingers",
+            "entity": "problem"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "are you crazy?",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "The laptop is very hot.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "laptop",
+            "entity": "device"
           }
         ]
       }
