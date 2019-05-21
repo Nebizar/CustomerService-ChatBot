@@ -6,6 +6,7 @@ Created on Mon May 20 17:28:17 2019
 """
 import os
 from rasa_nlu.training_data import load_data
+#from rasa_nlu.converters import load_rasa_data
 from rasa_nlu.model import Trainer
 from rasa_nlu.model import Interpreter
 from rasa_nlu.config import load
@@ -17,7 +18,7 @@ class NLU():
     def __init__(self):
         self.dir = 'data'
         self.file = 'testData.json'
-        self.data = os.path.join(self.dir,self.file)
+        self.data = os.path.join(self.dir, self.file)
         self.responser = ResponseBot()
         self.training()
         

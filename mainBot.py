@@ -7,6 +7,12 @@ Created on Mon May 20 17:13:01 2019
 
 from nlu import NLU
 import warnings
+import json
+
+def convertResponse(response):
+    response_dict = json.loads(response)
+    return response_dict["respond"]
+    
 
 """
 # Main loop of chatbot - do while intent is not 'goodbye'
@@ -17,9 +23,10 @@ def main():
     rasa_nlu.training()
     while True:
         message = input("User: ")
-        print('User: {}'.format(message))
-        respond = rasa_nlu.get_response(message)
-        print('Chatbot: {}'.format(respond))
+        #print('User: {}'.format(message))
+        response = rasa_nlu.get_response(message)
+        response = convertResponse(response)
+        print('Chatbot: {}'.format(response))
         if rasa_nlu.parse_msg(message)['intent']['name'] == 'goodbye':
             break
         
