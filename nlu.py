@@ -16,7 +16,7 @@ class NLU():
     
     # Init - get trainig data from dir, create responser object, train Rasa_NLU on data
     def __init__(self):
-        self.dir = 'data'
+        self.dir = 'data/training'
         self.file = 'testData.json'
         self.data = os.path.join(self.dir, self.file)
         self.responser = ResponseBot()
@@ -38,6 +38,7 @@ class NLU():
     # get relevant response basing on input intent
     def get_response(self, message):
         parsed_msg = self.parse_msg(message)
+        #print(parsed_msg)
         
         if parsed_msg['intent']['name']=='greet':
             return self.responser.greet_message()
@@ -56,6 +57,9 @@ class NLU():
                 return self.responser.myNameIs_message("Stranger")
         
         if not "intent" in parsed_msg or parsed_msg['intent'] is None:
+            return self.responser.unknown_message()
+        
+        else:
             return self.responser.unknown_message()
         
         

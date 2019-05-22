@@ -1,0 +1,30 @@
+{
+    "GREET":[
+            "hello",
+            "hi",
+            "Welcome!",
+            "What's up ?",
+            "Good morning"],
+    "GOODBYE":[
+            "See you later!",
+            "Goodbye",
+            "Bye",
+            "Come again"],
+    "HOW_ARE_YOU":[
+            "Fine, thanks",
+            "Very good",
+            "Good, you are really nice",
+            "Awesome",
+            "It's ok"],
+    "MY_NAME_IS":[
+            "Nice to meet you {}",
+            "Hi {}, whats up ?",
+            "Hi {}, my name is Bot",
+            "Hi {}, I am Bot",
+            "Hi {}, you can call me Bot"],
+    "UNKNOWN":[
+            "Sorry, I do not understand",
+            "Try tell me somthin different",
+            "I will get some help because I do not understand",
+            "Sorry I do not get you. I will do better next time"]
+}
