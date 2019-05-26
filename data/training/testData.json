@@ -56,6 +56,16 @@
         "entities": []
       },
       {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sure",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
         "text": "yep",
         "intent": "affirm",
         "entities": []
@@ -200,7 +210,7 @@
         ]
       },
       {
-        "text": "My name is James Bond",
+        "text": "you can call me James Bond",
         "intent": "my_name_is",
         "entities": [
           {

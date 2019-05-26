@@ -26,5 +26,10 @@
             "Sorry, I do not understand",
             "Try tell me somthin different",
             "I will get some help because I do not understand",
-            "Sorry I do not get you. I will do better next time"]
+            "Sorry I do not get you. I will do better next time"],
+    "ISSUE":[
+            "I can contact you with our helpdesk",
+            "Try turning it on and off",
+            "Try unplugging and plugging it back in",
+            "Sorry but you have to buy a new item"]
 }
