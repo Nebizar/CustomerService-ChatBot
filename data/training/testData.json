@@ -7,6 +7,26 @@
         "entities": []
       },
       {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hay",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "heloo",
+        "intent": "greet",
+        "entities": []
+      },
+      {
         "text": "howdy",
         "intent": "greet",
         "entities": []
@@ -56,6 +76,26 @@
         "entities": []
       },
       {
+        "text": "sure",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "fine",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "kk",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "okok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
         "text": "ok",
         "intent": "affirm",
         "entities": []
@@ -73,6 +113,36 @@
       {
         "text": "yeah",
         "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "thanks",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "thank you",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "thx",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "you're the best",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "you're cool",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "nice",
+        "intent": "gratitude",
         "entities": []
       },
       {

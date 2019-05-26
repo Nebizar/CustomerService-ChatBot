@@ -40,12 +40,14 @@ class NLU():
     
     # issue handling state functions
     def state_01(self, parsed_msg):
-        if parsed_msg['intent']['name'] == 'affirm':
+        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'gratitude':
             self.issue_handling = 2
             return self.responser.get_helpdesk()
         if parsed_msg['intent']['name'] == 'deny':
             self.issue_handling = 3
             return self.responser.get_help()
+        else:
+            return self.responser.unknown_message()
     
     def state_02(self, parsed_msg):
         self.issue_handling = 0

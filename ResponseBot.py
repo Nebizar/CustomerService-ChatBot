@@ -57,12 +57,19 @@ class ResponseBot():
         result_json = json.dumps(respond)
         return result_json
     
+    def no_problem(self):
+        respond = {}
+        respond['respond'] = random.choice(self.responses_dict["NO_PROBLEM"])
+        result_json = json.dumps(respond)
+        return result_json
+    
     def initial_issue_message(self):
         respond = {}
         respond['respond'] = "I can contact you with our specific helpdesk"
         result_json = json.dumps(respond)
         return result_json
-    
+    # TODO
+    # here return contact to specific helpdesk department depending on found entities
     def get_helpdesk(self):
         respond = {}
         respond['respond'] = "To contact our helpdesk call: 666-666-666"
