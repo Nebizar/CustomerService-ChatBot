@@ -58,10 +58,8 @@ class NLU():
         
     def state_03(self, parsed_msg):
         self.issue_handling = 0
-        return self.responser.issue_message()
-        
-        
-        
+        return self.responser.issue_message()   
+               
     # parse incoming message    
     def parse_msg(self, msg):
         return self.interpreter.parse(msg)

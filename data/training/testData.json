@@ -47,6 +47,16 @@
         "entities": []
       },
       {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "halo",
+        "intent": "greet",
+        "entities": []
+      },
+      {
         "text": "i have a problem with my laptop",
         "intent": "issue",
         "entities": [
