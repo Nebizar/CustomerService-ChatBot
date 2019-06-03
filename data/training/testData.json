@@ -280,12 +280,12 @@
         ]
       },
       {
-        "text": "you can call me James Bond",
+        "text": "My name is James Bond",
         "intent": "my_name_is",
         "entities": [
           {
-            "start": 16,
-            "end": 26,
+            "start": 11,
+            "end": 21,
             "value": "James Bond",
             "entity": "PERSON"
           }
@@ -344,7 +344,7 @@
       },
       {
         "text": "I can't turn on the computer.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 20,
@@ -517,7 +517,7 @@
       },
       {
         "text": "The monitor isn't turning on.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 4,
@@ -676,7 +676,7 @@
       },
       {
         "text": "The scanner won't turn on.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 4,
@@ -1000,7 +1000,7 @@
       },
       {
         "text": "the laptop does not power up.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 4,
@@ -1173,7 +1173,7 @@
       },
       {
         "text": "I can't install The Sims 4.",
-        "intent": "",
+        "intent": "issue",
         "entities": [
           {
             "start": 16,
@@ -1221,7 +1221,7 @@
       },
       {
         "text": "the computer does not power up",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 4,
@@ -1305,7 +1305,7 @@
       },
       {
         "text": "I can't turn on the laptop.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 20,
@@ -1453,7 +1453,7 @@
         "entities": [
           {
             "start": 4,
-            "end": 11,
+            "end": 10,
             "value": "laptop",
             "entity": "device"
           }
@@ -1461,7 +1461,7 @@
       },
       {
         "text": "I can't turn on the printer",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 20,
@@ -1509,7 +1509,7 @@
       },
       {
         "text": "The laptop isn't turning on.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 4,
@@ -1629,7 +1629,7 @@
       },
       {
         "text": "the printer isn't turning on.",
-        "intent": "cant_turn_on",
+        "intent": "issue",
         "entities": [
           {
             "start": 4,
@@ -1820,7 +1820,7 @@
         ]
       },
       {
-        "text": "My name is Freddie Mercury.",
+        "text": "My name is Freddie Mercury",
         "intent": "my_name_is",
         "entities": [
           {
@@ -1832,7 +1832,7 @@
         ]
       },
       {
-        "text": "My name is Monica.",
+        "text": "My name is Monica",
         "intent": "my_name_is",
         "entities": [
           {
@@ -1983,6 +1983,138 @@
             "start": 4,
             "end": 12,
             "value": "keyboard",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the speakers are on fire.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "speakers",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the laptop broke down",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I'm Captain America.",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 4,
+            "end": 19,
+            "value": "Captain America",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "I'm Wade",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Wade",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "My name is Tony",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Tony",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "the computer is useless",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the computer stopped working",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the monitor is useless",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "monitor",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "I am Zosia",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "Zosia",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "i can't use the laptop",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "this computer is stupid",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "computer",
             "entity": "device"
           }
         ]

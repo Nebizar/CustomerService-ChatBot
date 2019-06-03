@@ -24,15 +24,29 @@
             "Hi {}, you can call me Bot"],
     "UNKNOWN":[
             "Sorry, I do not understand",
-            "Try tell me somthin different",
+            "Try tell me something different",
             "I will get some help because I do not understand",
             "Sorry I do not get you. I will do better next time"],
     "ISSUE":[
-            "Try turning it on and off",
+            "Try turning it off and on again",
             "Try unplugging and plugging it back in",
             "Sorry but you have to buy a new item"],
     "NO_PROBLEM":[
             "Pleasure is all mine",
             "I am happy I could help",
-            "I'm happy that you're happy"]
+            "I'm happy that you're happy"],
+        "ASK_FOR_HELP":[
+                "Sure",
+                "Yes",
+                "I'm happy to help you"
+        ],
+        "GRATITUDE":[
+                "You're welcome",
+                "No problem",
+                "I'm glad that it works"
+        ],
+        "INCOMPLETE_ORDER":[
+                "We'll ship it to you."
+        ]
+        
 }

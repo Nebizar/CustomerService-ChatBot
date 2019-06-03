@@ -57,9 +57,21 @@ class ResponseBot():
         result_json = json.dumps(respond)
         return result_json
     
+    def gratitude_message(self):
+        respond = {}
+        respond['respond'] = random.choice(self.responses_dict["GRATITUDE"])
+        result_json = json.dumps(respond)
+        return result_json
+    
     def no_problem(self):
         respond = {}
         respond['respond'] = random.choice(self.responses_dict["NO_PROBLEM"])
+        result_json = json.dumps(respond)
+        return result_json
+
+    def askForHelp_message(self):
+        respond={}
+        respond['respond']=random.choice(self.responses_dict["ASK_FOR_HELP"])
         result_json = json.dumps(respond)
         return result_json
     
@@ -79,5 +91,11 @@ class ResponseBot():
     def get_help(self):
         respond = {}
         respond['respond'] = "Maybe I can help you"
+        result_json = json.dumps(respond)
+        return result_json
+    
+    def incompleteOrder_message(self):
+        respond = {}
+        respond['respond'] = random.choice(self.responses_dict["INCOMPLETE_ORDER"])
         result_json = json.dumps(respond)
         return result_json

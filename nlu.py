@@ -75,8 +75,14 @@ class NLU():
         if parsed_msg['intent']['name']=='greet':
             return self.responser.greet_message()
         
+        if parsed_msg['intent']['name']=='ask_for_help':
+            return self.responser.askForHelp_message()
+        
         if parsed_msg['intent']['name']=='goodbye':
             return self.responser.goodbye_message()
+
+        if parsed_msg['intent']['name']=='gratitude':
+            return self.responser.gratitude_message()
         
         if parsed_msg['intent']['name']=='how_are_you':
             return self.responser.howAreYou_message()
@@ -93,6 +99,9 @@ class NLU():
             #issue solving helpers
             self.issue_handling = 1
             return self.responser.initial_issue_message()
+        
+        if parsed_msg['intent']['name'] == 'incomplete_order':
+            return self.responser.incompleteOrder_message()
         
         if not "intent" in parsed_msg or parsed_msg['intent'] is None:
             return self.responser.unknown_message()
