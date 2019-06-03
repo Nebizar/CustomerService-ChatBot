@@ -42,7 +42,7 @@ class NLU():
     def state_01(self, parsed_msg):
         if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'gratitude':
             self.issue_handling = 2
-            return self.responser.get_helpdesk()
+            return self.responser.get_helpdesk(self.equipment)
         if parsed_msg['intent']['name'] == 'deny':
             self.issue_handling = 3
             return self.responser.get_help()
@@ -88,7 +88,7 @@ class NLU():
             return self.responser.howAreYou_message()
         
         if parsed_msg['intent']['name']=='my_name_is':
-            #print(parsed_msg)
+            print(parsed_msg)
             if len(parsed_msg['entities']) > 0:
                 return self.responser.myNameIs_message(parsed_msg['entities'][0]['value'])
             else:
@@ -97,12 +97,13 @@ class NLU():
         if parsed_msg['intent']['name'] == 'issue':
             #TODO 
             #issue solving helpers
+            self.equipment = parsed_msg['entities']
             self.issue_handling = 1
             return self.responser.initial_issue_message()
 
-        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'deny':
+        """if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'deny':
             return self.responser.helpdesk_message()
-        
+        """
         if parsed_msg['intent']['name'] == 'incomplete_order':
             return self.responser.incompleteOrder_message()
         

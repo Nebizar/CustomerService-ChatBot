@@ -52,6 +52,11 @@
           [
             "Have you tried turning it off and on again?",
             "Is it unplugged?"
-          ]
-        
+          ],
+
+    "GET_HELPDESK":[
+            "To contact our {} helpdesk call: {}",
+            "To call our {} helpdesk use this number: {}",
+            " {} helpdesk is available under this number: {}"
+    ]
 }
