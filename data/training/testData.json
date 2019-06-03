@@ -188,6 +188,21 @@
         "entities": []
       },
       {
+        "text": "nope",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "No",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "rather not",
+        "intent": "deny",
+        "entities": []
+      },
+      {
         "text": "indeed",
         "intent": "affirm",
         "entities": []

@@ -20,7 +20,10 @@ class NLU():
         self.issue_states = {
                 '1': self.state_01,
                 '2': self.state_02,
-                '3': self.state_03
+                '3': self.state_03,
+                '4': self.state_03,
+                '5': self.state_05,
+                '6': self.state_06
                 }
         self.dir = 'data/training'
         self.file = 'testData.json'
@@ -57,9 +60,37 @@ class NLU():
             return self.responser.unknown_message()
         
     def state_03(self, parsed_msg):
+        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'gratitude':
+            self.issue_handling += 1
+            return self.responser.helpQuestion_message(self.issue_handling)
+        if parsed_msg['intent']['name'] == 'deny':
+            if self.issue_handling == 3:
+                self.issue_handling = 0
+                return self.responser.denied_message()
+            else:
+                self.issue_handling = 6
+                return self.responser.encourage_message()
+        else:
+            return self.responser.unknown_message()
+        
+    def state_05(self, parsed_msg):
+        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'gratitude':
+            self.issue_handling = 6
+            return self.responser.plug_message()
+        if parsed_msg['intent']['name'] == 'deny':
+            self.issue_handling = 0
+            return self.responser.issue_message()
+        else:
+            return self.responser.unknown_message()
+    
+    def state_06(self, parsed_msg):
         self.issue_handling = 0
-        return self.responser.issue_message()   
-               
+        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'gratitude':
+            return self.responser.gratitude_message()
+        else:
+            return self.responser.unknown_message()
+            
+    
     # parse incoming message    
     def parse_msg(self, msg):
         return self.interpreter.parse(msg)
@@ -101,9 +132,9 @@ class NLU():
             self.issue_handling = 1
             return self.responser.initial_issue_message()
 
-        """if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'deny':
+        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'deny':
             return self.responser.helpdesk_message()
-        """
+        
         if parsed_msg['intent']['name'] == 'incomplete_order':
             return self.responser.incompleteOrder_message()
         

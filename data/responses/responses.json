@@ -28,8 +28,8 @@
             "I will get some help because I do not understand",
             "Sorry I do not get you. I will do better next time"],
     "ISSUE":[
-            "Try turning it off and on again",
-            "Try unplugging and plugging it back in",
+            "Sorry but I think it's seriously broken and I can't help you",
+            "Sorry, but this problem is too complicated for me",
             "Sorry but you have to buy a new item"],
     "NO_PROBLEM":[
             "Pleasure is all mine",
@@ -58,5 +58,15 @@
             "To contact our {} helpdesk call: {}",
             "To call our {} helpdesk use this number: {}",
             " {} helpdesk is available under this number: {}"
+    ],
+    "ENCOURAGE":[
+            "Then give it a try",
+            "You should try it",
+            "Maybe it will help"
+    ],
+    "DENIED":[
+            "Then I cannot help you",
+            "I can't do anything else",
+            "Sorry, I can't help"
     ]
 }
