@@ -24,7 +24,7 @@
             "Hi {}, you can call me Bot"],
     "UNKNOWN":[
             "Sorry, I do not understand",
-            "Try tell me something different",
+            "Try telling me something different",
             "I will get some help because I do not understand",
             "Sorry I do not get you. I will do better next time"],
     "ISSUE":[
@@ -47,6 +47,11 @@
         ],
         "INCOMPLETE_ORDER":[
                 "We'll ship it to you."
-        ]
+        ],
+  "QUESTIONS":
+          [
+            "Have you tried turning it off and on again?",
+            "Is it unplugged?"
+          ]
         
 }

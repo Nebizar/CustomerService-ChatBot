@@ -17,12 +17,12 @@
         "entities": []
       },
       {
-        "text": "hay",
+        "text": "Hi",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "heloo",
+        "text": "hello",
         "intent": "greet",
         "entities": []
       },
@@ -86,8 +86,8 @@
         "entities": []
       },
       {
-        "text": "kk",
-        "intent": "affirm",
+        "text": "I need help",
+        "intent": "ask_for_help",
         "entities": []
       },
       {
@@ -2114,6 +2114,107 @@
           {
             "start": 5,
             "end": 13,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "my name is charles",
+        "intent": "my_name_is",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "charles",
+            "entity": "PERSON"
+          }
+        ]
+      },
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "the laptop is broken",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "laptop",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the computer is broken",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "computer",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the keyboard is broken",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "keyboard",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the screen broke down",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "screen",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The speaker is broken",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "speaker",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "the keyboard is broken",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "keyboard",
+            "entity": "device"
+          }
+        ]
+      },
+      {
+        "text": "The computer isn't turning on.",
+        "intent": "issue",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
             "value": "computer",
             "entity": "device"
           }

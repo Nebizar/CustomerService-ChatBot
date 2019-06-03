@@ -77,7 +77,8 @@ class ResponseBot():
     
     def initial_issue_message(self):
         respond = {}
-        respond['respond'] = "I can contact you with our specific helpdesk"
+        #respond['respond'] = "I can contact you with our specific helpdesk"
+        respond['respond'] = random.choice(self.responses_dict["QUESTIONS"])
         result_json = json.dumps(respond)
         return result_json
     # TODO
@@ -85,6 +86,13 @@ class ResponseBot():
     def get_helpdesk(self):
         respond = {}
         respond['respond'] = "To contact our helpdesk call: 666-666-666"
+        result_json = json.dumps(respond)
+        return result_json
+
+    def helpdesk_message(self):
+        respond = {}
+        respond['respond'] = "I can contact you with our specific helpdesk"
+
         result_json = json.dumps(respond)
         return result_json
         

@@ -99,11 +99,14 @@ class NLU():
             #issue solving helpers
             self.issue_handling = 1
             return self.responser.initial_issue_message()
+
+        if parsed_msg['intent']['name'] == 'affirm' or parsed_msg['intent']['name'] == 'deny':
+            return self.responser.helpdesk_message()
         
         if parsed_msg['intent']['name'] == 'incomplete_order':
             return self.responser.incompleteOrder_message()
         
-        if not "intent" in parsed_msg or parsed_msg['intent'] is None:
+        if "intent" not in parsed_msg or parsed_msg['intent'] is None:
             return self.responser.unknown_message()
         
         else:
